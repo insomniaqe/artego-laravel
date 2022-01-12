@@ -1,0 +1,43 @@
+
+<section class="users">
+  <div class="users__top"><a class="users__top__orders" href="">Оставили заявку</a><a class="admin__logout" href="">Выход</a></div>
+  <div class="users__main">
+    <div class="users__search">
+      <form method="POST" action="" id="usersFindForm">
+        <input type="text" placeholder="Найти"/>
+        <button type="submit"><img src="img/icons/icon-admin-searchwhite.svg" alt=""/></button>
+      </form>
+    </div>
+    <div class="users__table">
+      <table>
+        <thead>
+          <tr>
+            <td><span>Номер заявки</span></td>
+            <td><span>ФИО</span></td>
+            <td><span>Номер телефона</span></td>
+            <td><span>E-mail</span></td>
+            <td><span>Дата</span></td>
+            <td><span></span></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span>31</span></td>
+            <td><span>Иванов Иван Иванович</span></td>
+            <td><span>8(321)123-12-12</span></td>
+            <td><span>ivanov@gmail.com</span></td>
+            <td><span>25.11.2021 23:50:51</span></td>
+            <td><a class="users__table__edit" href=""><img src="img/icons/icon-admin-edit.svg" alt=""/></a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="users__pagination">
+      <ul>
+        <li class="users__pagination__item users__pagination__item--active"><a href="">1</a></li>
+        <li class="users__pagination__item"><a href="">2</a></li>
+        <li class="users__pagination__item"><a href="">3</a></li>
+      </ul>
+    </div>
+  </div>
+</section>

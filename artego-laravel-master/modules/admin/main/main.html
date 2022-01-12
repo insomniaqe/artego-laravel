@@ -1,0 +1,180 @@
+
+<main class="main-admin">
+  <aside class="admin-sidebar">
+    <div class="admin-sidebar__wrapper sidebar--desktop">
+      <div class="admin-sidebar__top"><a class="admin-sidebar__logo" href=""><img src="img/logo-top-colored.svg" alt=""/></a><a class="admin-sidebar__username" href=""><img src="img/icons/icon-admin-human.svg"/> Админ</a></div>
+      <div class="admin-sidebar__nav">
+        <ul>
+          <li><a href=""><i class="far fa-file-alt"></i> Заявки-анкеты</a></li>
+          <li><a href=""><i class="fas fa-user"></i> Пользователи</a></li>
+          <li><a href=""><i class="far fa-calendar-alt"></i> Мероприятия<i class="fa fa-chevron-up"></i></a>
+            <ul class="admin-sidebar__submenu">
+              <li><a class="admin-sidebar__events" href=""><i class="far fa-calendar-check"></i> Текущие мероприятия<img class="currentevents-arrow" src="img/icons/icon-admin-eventsarrow.svg" alt=""/></a></li>
+              <li><a href=""><i class="far fa-folder-open"></i> Архив</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+  <aside class="admin-sidebar admin-sidebar--mob">
+    <div class="admin-sidebar__wrapper">
+      <div class="admin-sidebar__left"><a class="admin-sidebar__menu" href="" id="adminSidebarHamburger"><i class="fas fa-bars"></i></a></div>
+      <div class="admin-sidebar__middle"><a class="admin-sidebar__logo" href=""><img src="img/icons/admin-nav-logo-black.svg" alt=""/></a></div>
+      <div class="admin-sidebar__right"><a class="admin-sidebar__logout" href="">Выйти</a></div>
+    </div>
+    <div class="admin__nav__menu">
+      <ul>
+        <li><a href=""><i class="far fa-file-alt"></i> Заявки-анкеты</a></li>
+        <li><a href=""><i class="fas fa-user"></i> Пользователи</a></li>
+        <li><a href=""><i class="far fa-calendar-alt"></i> Мероприятия<i class="fa fa-chevron-up"></i></a>
+          <ul class="admin-sidebar__submenu">
+            <li><a class="admin-sidebar__events" href=""><i class="far fa-calendar-check"></i> Текущие мероприятия<img class="currentevents-arrow" src="img/icons/icon-admin-eventsarrow.svg" alt=""/></a></li>
+            <li><a href=""><i class="far fa-folder-open"></i> Архив</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </aside>
+  <section class="events">
+    <div class="events__top"><a class="events__top__list" href="">Список мероприятий</a><a class="admin__logout" href="">Выход</a></div>
+    <div class="events__main">
+      <div class="events__add"><a class="events__add__btn" href="">Добавить мероприятие</a>
+        <div class="events__filters">
+          <form class="events__filter" action="" method="POST">
+            <div class="form-group"><span>c</span>
+              <input class="events__before" type="date"/>
+            </div>
+            <div class="form-group"><span>по</span>
+              <input class="events__after" type="date"/>
+            </div>
+            <button class="events__filter__btn" type="submit">Поиск</button><a class="events__filter__btn" href="">Сброс</a>
+          </form>
+          <form class="events__search" action="" method="POST">
+            <input type="text" placeholder="Найти"/>
+            <button type="submit"><img src="img/icons/icon-admin-searchwhite.svg" alt=""/></button>
+          </form>
+        </div>
+      </div>
+      <div class="events__table">
+        <table>
+          <thead>
+            <tr>
+              <td><span>Название</span></td>
+              <td><span>Начало</span></td>
+              <td><span>Окончание</span></td>
+              <td><span>Участники</span></td>
+              <td><span>Место</span></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span>Дегустация вина</span></td>
+              <td><span>2020-06-03 21:37:45</span></td>
+              <td><span>2020-06-03 21:37:45</span></td>
+              <td><span>150</span></td>
+              <td><span>Москва</span></td>
+              <td><a class="events__delete" href=""><img src="img/icons/icon-admin-trash-red.svg" alt=""/></a></td>
+              <td><a class="events__notice__btn" href="">Разослать уведомления</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="events__pagination">
+        <ul>
+          <li class="events__pagination__item events__pagination__item--active"><a href="">1</a></li>
+          <li class="events__pagination__item"><a href="">2</a></li>
+          <li class="events__pagination__item"><a href="">3</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="users">
+    <div class="users__top"><a class="users__top__orders" href="">Оставили заявку</a><a class="admin__logout" href="">Выход</a></div>
+    <div class="users__main">
+      <div class="users__search">
+        <form method="POST" action="" id="usersFindForm">
+          <input type="text" placeholder="Найти"/>
+          <button type="submit"><img src="img/icons/icon-admin-searchwhite.svg" alt=""/></button>
+        </form>
+      </div>
+      <div class="users__table">
+        <table>
+          <thead>
+            <tr>
+              <td><span>Номер заявки</span></td>
+              <td><span>ФИО</span></td>
+              <td><span>Номер телефона</span></td>
+              <td><span>E-mail</span></td>
+              <td><span>Дата</span></td>
+              <td><span></span></td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span>31</span></td>
+              <td><span>Иванов Иван Иванович</span></td>
+              <td><span>8(321)123-12-12</span></td>
+              <td><span>ivanov@gmail.com</span></td>
+              <td><span>25.11.2021 23:50:51</span></td>
+              <td><a class="users__table__edit" href=""><img src="img/icons/icon-admin-edit.svg" alt=""/></a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="users__pagination">
+        <ul>
+          <li class="users__pagination__item users__pagination__item--active"><a href="">1</a></li>
+          <li class="users__pagination__item"><a href="">2</a></li>
+          <li class="users__pagination__item"><a href="">3</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="addevent">
+    <div class="addevent__top"><a class="addevent__top__add" href="">Добавить мероприятие</a><a class="admin__logout" href="">Выход</a></div>
+    <div class="addevent__main">
+      <div class="addevent__form">
+        <form method="POST" action="" enctype="multipart/form-data" id="addEventForm">
+          <div class="form-group">
+            <label for="event_name">Название</label>
+            <input type="text" id="event_name" name="event_name" placeholder="Введите название"/>
+          </div>
+          <div class="form-group">
+            <p class="label">Обложка</p>
+            <input class="addevent__file__input" type="file" id="event_poster" name="event_poster" accept="image/png, image/jpeg"/>
+            <label class="addevent__file" for="event_poster"><span class="addevent__file__button">Обзор</span><span class="addevent__file__text">Файл не выбран</span></label>
+          </div>
+          <div class="form-group">
+            <label for="event_description">Описание</label>
+            <textarea name="event_description" id="event_description" placeholder="Введите описание"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="event_begin">Дата начала</label>
+            <input type="date" id="event_begin" name="event_begin"/>
+          </div>
+          <div class="form-group">
+            <label for="event_end">Дата окончания</label>
+            <input type="date" id="event_end" name="event_end"/>
+          </div>
+          <div class="form-group">
+            <label for="event_place">Место проведения</label>
+            <input type="text" id="event_place" name="event_place" placeholder="Москва"/>
+          </div>
+          <div class="form-group">
+            <label for="event_people">Максимальное число участников</label>
+            <input type="text" id="event_people" name="event_people" placeholder="Введите максимальное число участников"/>
+          </div>
+          <div class="form-group">
+            <p class="label">Выбор файла для мероприятия</p>
+            <input class="addevent__file__input" type="file" name="event_file" id="event_file" accept="image/png, image/jpeg"/>
+            <label class="addevent__file" for="event_file"><span class="addevent__file__button">Обзор</span><span class="addevent__file__text">Файл не выбран</span></label>
+          </div>
+          <button type="submit">Подтвердить</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>

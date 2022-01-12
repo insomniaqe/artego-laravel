@@ -1,0 +1,56 @@
+
+<section class="events">
+  <div class="events__top"><a class="events__top__list" href="">Список мероприятий</a><a class="admin__logout" href="">Выход</a></div>
+  <div class="events__main">
+    <div class="events__add"><a class="events__add__btn" href="">Добавить мероприятие</a>
+      <div class="events__filters">
+        <form class="events__filter" action="" method="POST">
+          <div class="form-group"><span>c</span>
+            <input class="events__before" type="date"/>
+          </div>
+          <div class="form-group"><span>по</span>
+            <input class="events__after" type="date"/>
+          </div>
+          <button class="events__filter__btn" type="submit">Поиск</button><a class="events__filter__btn" href="">Сброс</a>
+        </form>
+        <form class="events__search" action="" method="POST">
+          <input type="text" placeholder="Найти"/>
+          <button type="submit"><img src="img/icons/icon-admin-searchwhite.svg" alt=""/></button>
+        </form>
+      </div>
+    </div>
+    <div class="events__table">
+      <table>
+        <thead>
+          <tr>
+            <td><span>Название</span></td>
+            <td><span>Начало</span></td>
+            <td><span>Окончание</span></td>
+            <td><span>Участники</span></td>
+            <td><span>Место</span></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span>Дегустация вина</span></td>
+            <td><span>2020-06-03 21:37:45</span></td>
+            <td><span>2020-06-03 21:37:45</span></td>
+            <td><span>150</span></td>
+            <td><span>Москва</span></td>
+            <td><a class="events__delete" href=""><img src="img/icons/icon-admin-trash-red.svg" alt=""/></a></td>
+            <td><a class="events__notice__btn" href="">Разослать уведомления</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="events__pagination">
+      <ul>
+        <li class="events__pagination__item events__pagination__item--active"><a href="">1</a></li>
+        <li class="events__pagination__item"><a href="">2</a></li>
+        <li class="events__pagination__item"><a href="">3</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
